@@ -37,12 +37,12 @@ gulp.task('jade', function(){
 });
 
 // Подключем ссылки на bower components (переписываем wiredep под работу с jade-ом)
-gulp.task('wiredep', function(){
+gulp.task('wiredep', function () {
 	gulp.src('app/templates/common/*.jade')
-	.pipe(wiredep([
-		ignorePath: /^(\.\.\/)*\.\./
-	]))
-	.pipe(gulp.dest('app/templates/common/'))
+		.pipe(wiredep({
+			ignorePath: /^(\.\.\/)*\.\./
+		}))
+		.pipe(gulp.dest('app/templates/common/'))
 });
 
 // слежка и запуск
@@ -57,7 +57,7 @@ gulp.task('watch', function(){
 });
 
 // задача по умолчанию
-gulp.task('default', ['server', 'watch']));
+gulp.task('default', ['server', 'watch']);
 
 // Запускаем локальный сервер (только после компиляции jade)
 gulp.task('server', [jade], function(){
@@ -128,16 +128,17 @@ gulp.task('clean', function(){
 
 
 // Более наглядный вывод ошибок
-var log = function(error){
-	console.log({
+var log = function (error) {
+	console.log([
 		'',
 		"----------ERROR MESSAGE START----------",
-		("[" + error.name + "in" + error.plugin + "]"),
+		("[" + error.name + " in " + error.plugin + "]"),
 		error.message,
 		"----------ERROR MESSAGE END----------",
-		
-	});
-};
+		''
+	].join('\n'));
+	this.end();
+}
 
 // ДЕПЛОЙ
 gulp.task('deploy', function(){

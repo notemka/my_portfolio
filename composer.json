@@ -1,0 +1,15 @@
+{
+  "name": "portfolio/package_name",
+  "description": "my portfolio",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Emma Khayrullina",
+      "email": "emma.saitgaraeva@gmail.com"
+    }
+  ],
+  "require": {
+    "phpmailer/phpmailer": "v5.2.10"
+  }
+}

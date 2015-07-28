@@ -1,0 +1,13 @@
+@import "settings/_settings";
+
+html{
+	height: 100%;
+}
+body{
+  height: 100%;
+  background: $bgColor;
+}
+.wrapper{
+  width: 960px;
+  border: $border;
+}

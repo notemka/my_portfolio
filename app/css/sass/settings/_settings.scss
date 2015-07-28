@@ -1,0 +1,19 @@
+@charset "UTF-8";
+.clearfix:after,.clearfix:before{
+  content: ' ';
+  display: table;
+}
+.clearfix:after{
+  clear: both;
+}
+
+/* для IE6-7 */
+.clearfix {
+  zoom: 1;
+}
+.hidden{
+  display: none;
+}
+
+$border: 1px solid red;
+$bgColor: #fcf9f4;

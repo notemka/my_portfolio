@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<title>Контакты</title>
+	<!-- build:css css/vendor.min.css -->
+	<!-- bower:css -->
+	<link rel="stylesheet" href="bower/normalize-css/normalize.css" />
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- biuld:css css/main.min.css -->
+	<link rel="stylesheet" href="css/main.css"/>
+	<!-- endbiuld -->
+
+	<!-- build:js js/modernizr.min.js -->
+	<script src="bower/modernizr/modernizr.js"></script>
+	<!-- endbuild -->
+</head>
+<body>
+<div class="wrapper clearfix">
+	<header class="page-header clearfix">
+		<nav class="navigation">
+			<ul class="navigation__list clearfix">
+				<li class="navigation__item"><a href="index.html" class="navigation__item-link">Портфолио</a></li>
+				<li class="navigation__item"><a href="about.html" class="navigation__item-link">Обо мне</a></li>
+				<li class="navigation__item"><a href="contacts.html" class="navigation__item-link active">Контакты</a></li>
+			</ul>
+		</nav>
+	</header>
+	<div class="page-container">
+		<div class="content">
+			<form class="form" action="">
+				<input class="name-field" type="text" placeholder="Ваше имя"/>
+				<input class="email-field" type="email" placeholder="Ваш email"/>
+				<input class="theme-field" type="text" placeholder="ваш вопрос, предложение"/>
+				<textarea class="message-field" placeholder="Текст сообщения"></textarea>
+				<input class="send-btn" type="submit" value="Отправить"/>
+			</form>
+			<ul class="social-list">
+				<li class="social-item"><a class="social-item__link" href="">ВКонтакте</a></li>
+				<li class="social-item"><a class="social-item__link" href="">Twitter</a></li>
+				<li class="social-item"><a class="social-item__link" href="">Skype</a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<!-- build:js js/vendor.min.js-->
+<!-- bower:js -->
+<script src="bower/jquery/dist/jquery.js"></script>
+<script src="bower/modernizr/modernizr.js"></script>
+<!-- endbower -->
+<!-- endbuild -->
+
+<!-- build:js js/main.min.js -->
+<script src="js/main.js"></script>
+<!-- endbuild -->
+</body>
+</html>

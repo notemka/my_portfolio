@@ -16,8 +16,29 @@
 }
 
 $border: 1px solid red;
-$bgColor: #fdf9ee/*89e5d3*/ /*fcf9f4*/;
+$colorFonts: #fff;
+$bgColor: #0e9a4a/*89e5d3*/ /*fcf9f4*/;
 $titleColor: #fcc174;
-$links: #13a0d8;
-$navColor: #c6d941;
-$borderRad: 5px;
+$links: #fff;
+$navColor: #fff;
+$btnColor: #fffb9b;
+
+@mixin borderRadius($radius){
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
+
+@mixin transition($transition){
+  transition: $transition linear;
+  -webkit-transition: $transition linear;
+  -moz-transition: $transition linear;
+}
+@mixin transform($transform){
+  transform: scale($transform);
+  -webkit-transform: scale($transform);
+  -moz-transform: scale($transform);
+}
+@mixin list{
+}

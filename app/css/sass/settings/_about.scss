@@ -1,0 +1,70 @@
+.content{
+  position: relative;
+}
+.content-about{
+  margin: 50px 50px 0;
+}
+.foto-wrapper{
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  top: -55px;
+  left: -55px;
+  @include borderRadius(50%);
+  border: 4px solid #fff;
+  overflow: hidden;
+}
+.foto{
+  width: 100%;
+}
+.inf-list{
+  list-style: none;
+  position: relative;
+  padding: 0;
+}
+.inf-item{
+//  display: inline-block;
+  margin-bottom: 20px;
+}
+.inf-item__title{
+  float: left;
+  margin-right: 20px;
+  text-align: center;
+  width: 120px;
+  @include borderRadius(5px);
+  border: 1px solid #fff;
+  padding: 5px 10px;
+  word-break: break-all;
+}
+.inf-item__title-value{
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  right: 0;
+//  bottom: 0;
+//  margin: auto;
+}
+.resume-btn{
+  background: $btnColor;
+  color: #1996f6;
+  border: none;
+  font-size: 1.2em;
+  @include borderRadius(5px);
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+.social-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.social-item{
+  display: inline-block;
+}
+.social-item__link{
+  max-width: 50px;
+  max-height: 50px;
+  margin-left: 20px;
+  text-indent: -9999px;
+}

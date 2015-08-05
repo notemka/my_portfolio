@@ -19,7 +19,7 @@
   position: relative; }
 
 .content-about {
-  margin: 50px 50px 0; }
+  margin: 60px 0 0 60px; }
 
 .foto-wrapper {
   position: absolute;
@@ -37,10 +37,14 @@
 .foto {
   width: 100%; }
 
+.inf {
+  float: left; }
+
 .inf-list {
   list-style: none;
   position: relative;
-  padding: 0; }
+  padding: 0;
+  margin: 0 0 20px 0; }
 
 .inf-item {
   margin-bottom: 20px; }
@@ -49,41 +53,132 @@
   float: left;
   margin-right: 20px;
   text-align: center;
-  width: 120px;
+  width: 140px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
   border: 1px solid #fff;
   padding: 5px 10px;
-  word-break: break-all; }
+  word-wrap: break-word; }
 
-.resume-btn {
+.inf-item__title-value {
+  float: left;
+  max-width: 400px; }
+
+.btn {
   background: #fffb9b;
   color: #1996f6;
   border: none;
   font-size: 1.2em;
+  text-transform: uppercase;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
   border-radius: 5px;
-  padding: 5px 10px;
-  margin-bottom: 20px; }
+  padding: 10px 20px;
+  border-bottom: 4px solid #ffd896; }
 
-.social-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+.social-btn {
+  display: inline-block;
   float: right; }
 
-.social-item {
-  display: inline-block; }
-
-.social-item__link {
+.social-btn__link {
   max-width: 50px;
   max-height: 50px;
-  margin-left: 20px;
-  text-indent: -9999px; }
+  margin-top: 20px;
+  display: block;
+  border: 3px solid #fff;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+  .social-btn__link:first-child {
+    margin-top: 0; }
+
+.git {
+  background-color: #a5f271; }
+
+.tw {
+  background-color: #55acee; }
+
+.vk {
+  background-color: #4980b7; }
+
+.git:hover, .tw:hover, .vk:hover {
+  background-color: transparent; }
+
+.form {
+  width: 300px;
+  float: left;
+  text-align: center; }
+
+.name-field, .email-field, .theme-field, .message-field {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-bottom: 2px solid #fff;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  border-radius: 2px;
+  padding: 10px 20px;
+  box-sizing: border-box; }
+
+.message-field {
+  margin-bottom: 30px;
+  height: 150px; }
+
+input::-webkit-input-placeholder {
+  color: #fff; }
+
+input:-moz-input-placeholder {
+  color: #fff; }
+
+input:-ms-input-placeholder {
+  color: #fff; }
+
+textarea::-webkit-input-placeholder {
+  color: #fff; }
+
+textarea:-moz-input-placeholder {
+  color: #fff; }
+
+textarea:-ms-input-placeholder {
+  color: #fff; }
+
+.contacts-list {
+  list-style: none;
+  width: 300px;
+  float: right;
+  margin: 0;
+  padding: 0; }
+
+.contacts-item {
+  display: inline-block; }
+
+.contacts-item__link {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 10px 15px;
+  margin-left: 30px; }
+  .contacts-item__link:hover {
+    text-decoration: underline; }
+
+.telephone {
+  background: url("../img/mobile.png") 2% 50%;
+  background-repeat: no-repeat; }
+
+.email {
+  background: url("../img/mail.png") 2% 50%;
+  background-repeat: no-repeat; }
+
+.skype {
+  background: url("../img/skype.png") 2% 50%;
+  background-repeat: no-repeat; }
 
 html {
   height: 100%; }

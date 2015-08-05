@@ -1,0 +1,73 @@
+.form{
+  width: 300px;
+  float: left;
+  text-align: center;
+}
+.name-field, .email-field, .theme-field, .message-field{
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  background: rgba(255,255,255,0.2);
+  border: none;
+  border-bottom: 2px solid #fff;
+  @include borderRadius(2px);
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+.message-field {
+  margin-bottom: 30px;
+  height: 150px;
+}
+input::-webkit-input-placeholder{
+  color: #fff;
+}
+input:-moz-input-placeholder{
+  color: #fff;
+}
+input:-ms-input-placeholder{
+  color: #fff;
+}
+textarea::-webkit-input-placeholder{
+  color: #fff;
+}
+textarea:-moz-input-placeholder{
+  color: #fff;
+}
+textarea:-ms-input-placeholder{
+  color: #fff;
+}
+.send-btn{
+}
+.contacts-list{
+  list-style: none;
+  width: 300px;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+.contacts-item{
+  display: inline-block;
+//  margin-bottom: 10px;
+}
+	.contacts-item__link{
+	  color: #fff;
+	  text-decoration: none;
+	  display: block;
+	  padding: 10px 15px;
+	  margin-left: 30px;
+	  &:hover{
+		text-decoration: underline;
+	  }
+	}
+	.telephone{
+		background: url('../img/mobile.png') 2% 50%;
+	  	background-repeat: no-repeat;
+	}
+	.email{
+	  background: url('../img/mail.png') 2% 50%;
+	  background-repeat: no-repeat;
+	}
+	.skype{
+	  background: url('../img/skype.png') 2% 50%;
+	  background-repeat: no-repeat;
+	}

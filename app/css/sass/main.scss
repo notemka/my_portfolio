@@ -1,6 +1,7 @@
 @import "settings/_settings";
 @import "settings/_about";
 @import "settings/_contacts";
+@import "settings/_index";
 @import "../img/sprites.css";
 @import "../fonts/ubuntu.css";
 
@@ -12,7 +13,6 @@ body{
   background: $bgColor;
   font-size: 16px;
   color: $colorFonts;
-  background: $bgColor;
   font-family: 'UbuntuRegular';
 }
 .wrapper{
@@ -39,17 +39,23 @@ body{
   text-decoration: none;
   padding: 10px 15px;
 }
-.active, .navigation__item-link:hover{
+.active{
 	background: $navColor;
 	color: $bgColor;
+ 	@include transform(1.1);
 	@include borderRadius(5px);
+}
+.navigation__item-link:hover{
+  @include transform(1.1);
+  @include transition(0.2s);
+//  @include textShadow(1px 1px 2px #1996f6);
 }
 .page-container{
   background: #27ae60;
   @include borderRadius(5px);
 }
 .content{
-  padding: 30px;
+  padding: 40px;
   margin-bottom: 20px;
   height: 400px;
 }
@@ -61,7 +67,7 @@ body{
   list-style: none;
 //  border: 2px solid #1996f6;
   padding: 0;
-  margin: 0 0 0 -33px;
+  margin: 0 0 0 -26px;
 //  box-sizing: border-box;
 }
 .projects__item{
@@ -69,7 +75,7 @@ body{
   @include borderRadius(5px);
   overflow: hidden;
   float: left;
-  margin: 0 0 20px 33px;
+  margin: 0 0 20px 26px;
   vertical-align: top;
   text-align: center;
   position: relative;
@@ -93,6 +99,7 @@ body{
 .projects__link, .projects__link-bg{
   display: none;
   position: absolute;
+  @include transition(0.3s);
 }
 .projects__link-bg{
   top: 0;
@@ -101,15 +108,17 @@ body{
   background: rgba(31, 79, 166,0.8);
   width: 200px;
   height: 150px;
-  @include transition(0.3s);
 }
 .projects__link{
   top: 40%;
-  left: 13%;
+  left: 10%;
   width: 150px;
   z-index: 10;
   color: #fff;
   text-decoration: none;
+  padding: 5px;
+  border: 1px solid #fff;
+  @include borderRadius(5px);
   @include transition(0.3s);
 }
 .projects__img-add{
@@ -133,4 +142,13 @@ body{
   &:hover{
 	text-decoration: underline;
   }
+}
+.page-footer{
+  width: 100%;
+}
+.footer-wrap{
+  width: 960px;
+}
+.footer{
+  margin: 0 auto;
 }

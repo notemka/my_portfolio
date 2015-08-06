@@ -1,22 +1,22 @@
-.tw, .vk, .git{
+.git, .tw, .vk{
 	background: url(sprites.png) no-repeat;
 }
 
+.git{
+	background-position: 0 -50px ;
+	width: 45px;
+	height: 45px;
+}
+
 .tw{
-	background-position: 0 -54px ;
-	width: 50px;
-	height: 50px;
+	background-position: -50px 0;
+	width: 45px;
+	height: 45px;
 }
 
 .vk{
-	background-position: -50px 0;
-	width: 50px;
-	height: 50px;
-}
-
-.git{
 	background-position: 0 0;
-	width: 50px;
-	height: 50px;
+	width: 45px;
+	height: 45px;
 }
 

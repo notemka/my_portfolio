@@ -17,11 +17,14 @@
 
 $border: 1px solid red;
 $colorFonts: #fff;
-$bgColor: #0e9a4a/*89e5d3*/ /*fcf9f4*/;
-$titleColor: #fcc174;
+$bgColor: #0e9a4a;
+$titleColor: #fffb9b;
 $links: #fff;
 $navColor: #fff;
-$btnColor: #fffb9b;
+$btnBg: #9AE148;
+$btnColor: #fff;
+$btnBorder: #71C412;
+//  color: #1996f6;
 
 @mixin borderRadius($radius){
   -webkit-border-radius: $radius;
@@ -40,5 +43,13 @@ $btnColor: #fffb9b;
   -webkit-transform: scale($transform);
   -moz-transform: scale($transform);
 }
-@mixin list{
+@mixin textShadow($textShadow){
+  -webkit-text-shadow: $textShadow;
+  -moz-text-shadow: $textShadow;
+  text-shadow: $textShadow;
+}
+@mixin boxShadow($boxShadow){
+  -webkit-box-shadow: $boxShadow;
+  -moz-box-shadow: $boxShadow;
+  box-shadow: $boxShadow;
 }

@@ -1,5 +1,5 @@
 .form{
-  width: 300px;
+  width: 350px;
   float: left;
   text-align: center;
 }
@@ -16,7 +16,8 @@
 }
 .message-field {
   margin-bottom: 30px;
-  height: 150px;
+  height: 120px;
+  resize: none;
 }
 input::-webkit-input-placeholder{
   color: #fff;
@@ -37,6 +38,11 @@ textarea:-ms-input-placeholder{
   color: #fff;
 }
 .send-btn{
+  font-size: 1em;
+//  background-image: url(../img/plane.png);
+//  background-position: center right;
+//  background-repeat: no-repeat;
+//  padding: 10px 40px 10px 10px;
 }
 .contacts-list{
   list-style: none;
@@ -47,7 +53,6 @@ textarea:-ms-input-placeholder{
 }
 .contacts-item{
   display: inline-block;
-//  margin-bottom: 10px;
 }
 	.contacts-item__link{
 	  color: #fff;

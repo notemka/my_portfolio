@@ -1,0 +1,24 @@
+#Установка кодировки
+AddDefaultCharset UTF-8
+
+#Разрешение прохождения по символическим ссылкам
+Options FollowSymLinks
+
+#Запрет на просмотр файлов в директориях
+Options -Indexes
+
+#Включение mod_rewrite
+RewriteEngine on
+
+#Правила для mod_rewrite
+#Если это не файл favicon
+RewriteCond %{REQUEST_FILENAME} !^favicon\.ico
+#Если это не папка
+RewriteCond %{REQUEST_FILENAME} !-d
+#Если это не файл
+RewriteCond %{REQUEST_FILENAME} !-f
+
+RewriteRule ^projects/?$ main.php?page=portfolio
+RewriteRule ^about/?$ main.php?page=about
+RewriteRule ^contacts/?$ main.php?page=contacts
+RewriteRule ^/?$ main.php?page=index

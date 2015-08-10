@@ -1,15 +1,80 @@
+.index-bg{
+//  background-image: url('../img/bg.jpg');
+//  background-repeat:  no-repeat;
+//  background-size: 100% 100%;
+//  position: fixed;
+//  top: 0;
+//  left: 0;
+//  right: 0;
+//  bottom: 0;
+}
+.page{
+  background-color: rgba(0,0,0,0.4);
+  padding: 10px;
+  @include borderRadius(10px);
+}
+//.page-logbtn{
+//  margin: 0 0 20px 0;
+//  width: 100px;
+//}
+.login{
+  text-decoration: none;
+  color: $bgColor;
+  background: #fff;
+  padding: 5px 10px;
+  @include borderRadius(5px);
+}
+.page-title__wrap{
+  width: 470px;
+  float: left;
+  text-align: center;
+}
 .page-title{
-	float: left;
+  font-size: 30px;
+  margin: 0;
 }
 .example-box{
 	float: right;
   	position: relative;
+    width: 470px;
+    height: 470px;
+}
+.example-box__link{
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 .project{
   position: absolute;
+  overflow: hidden;
   width: 150px;
   height: 150px;
+  @include rotate(45deg);
+  //  border: $border;
 }
 .example-img{
   width: 100%;
+  height: 100%;
+  @include resize(1.1);
+  @include rotate(-45deg);
+}
+.project-first{
+  top: 7%;
+  left: 32%;
+}
+.project-second{
+  top: 31%;
+  left: 57%;
+}
+.project-third{
+  top: 31%;
+  left: 7%;
+}
+.project-four{
+  bottom: 13%;
+  left: 32%;
 }

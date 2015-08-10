@@ -18,7 +18,7 @@
 .content {
   position: relative; }
 
-.content-about {
+.about {
   margin: 0 0 0 100px; }
 
 .foto-wrapper {
@@ -41,7 +41,7 @@
   float: left; }
 
 .inf__title {
-  color: #fffb9b;
+  color: #fff;
   font-size: 25px;
   margin: 0 0 40px 0;
   -webkit-text-shadow: 1px 1px 2px #FF5900;
@@ -202,37 +202,101 @@ textarea:-ms-input-placeholder {
   background: url("../img/skype.png") 2% 50%;
   background-repeat: no-repeat; }
 
+.page {
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  border-radius: 10px; }
+
+.login {
+  text-decoration: none;
+  color: #0e9a4a;
+  background: #fff;
+  padding: 5px 10px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  border-radius: 5px; }
+
+.page-title__wrap {
+  width: 470px;
+  float: left;
+  text-align: center; }
+
 .page-title {
-  float: left; }
+  font-size: 30px;
+  margin: 0; }
 
 .example-box {
   float: right;
-  position: relative; }
+  position: relative;
+  width: 470px;
+  height: 470px; }
+
+.example-box__link {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0; }
 
 .project {
   position: absolute;
+  overflow: hidden;
   width: 150px;
-  height: 150px; }
+  height: 150px;
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg); }
 
 .example-img {
-  width: 100%; }
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg); }
+
+.project-first {
+  top: 7%;
+  left: 32%; }
+
+.project-second {
+  top: 31%;
+  left: 57%; }
+
+.project-third {
+  top: 31%;
+  left: 7%; }
+
+.project-four {
+  bottom: 13%;
+  left: 32%; }
 
 html {
   height: 100%; }
 
 body {
   height: 100%;
-  background: #0e9a4a;
+  background: url(../img/bg.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
   font-size: 16px;
   color: #fff;
   font-family: 'UbuntuRegular'; }
 
 .wrapper {
   width: 960px;
-  margin: 30px auto 0; }
+  margin: 0 auto; }
 
 .page-header {
-  margin: 0 0 50px; }
+  margin: 20px 0 20px; }
 
 .navigation {
   float: right; }
@@ -302,12 +366,9 @@ body {
   margin: 0 0 20px 26px;
   vertical-align: top;
   text-align: center;
-  position: relative;
-  transition: 0.3s linear;
-  -webkit-transition: 0.3s linear;
-  -moz-transition: 0.3s linear; }
+  position: relative; }
   .projects__item:hover .projects__link-bg, .projects__item:hover .projects__link {
-    display: block; }
+    opacity: 1; }
   .projects__item:hover .projects__img {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -325,11 +386,11 @@ body {
   -moz-transition: 0.3s linear; }
 
 .projects__link, .projects__link-bg {
-  display: none;
+  opacity: 0;
   position: absolute;
-  transition: 0.3s linear;
-  -webkit-transition: 0.3s linear;
-  -moz-transition: 0.3s linear; }
+  transition: opacity 0.3s linear;
+  -webkit-transition: opacity 0.3s linear;
+  -moz-transition: opacity 0.3s linear; }
 
 .projects__link-bg {
   top: 0;

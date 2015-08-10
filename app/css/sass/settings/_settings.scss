@@ -18,7 +18,7 @@
 $border: 1px solid red;
 $colorFonts: #fff;
 $bgColor: #0e9a4a;
-$titleColor: #fffb9b;
+$titleColor: #fff /*#fffb9b*/;
 $links: #fff;
 $navColor: #fff;
 $btnBg: #9AE148;
@@ -38,10 +38,15 @@ $btnBorder: #71C412;
   -webkit-transition: $transition linear;
   -moz-transition: $transition linear;
 }
-@mixin transform($transform){
+@mixin resize($transform){
   transform: scale($transform);
   -webkit-transform: scale($transform);
   -moz-transform: scale($transform);
+}
+@mixin rotate($rotate){
+  transform: rotate($rotate);
+  -webkit-transform: rotate($rotate);
+  -moz-transform: rotate($rotate);
 }
 @mixin textShadow($textShadow){
   -webkit-text-shadow: $textShadow;

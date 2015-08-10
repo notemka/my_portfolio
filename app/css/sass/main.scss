@@ -10,17 +10,19 @@ html{
 }
 body{
   height: 100%;
-  background: $bgColor;
+  background: url(../img/bg.jpg)/*$bgColor*/;
+  background-repeat:  no-repeat;
+  background-size: 100% 100%;
   font-size: 16px;
   color: $colorFonts;
   font-family: 'UbuntuRegular';
 }
 .wrapper{
   width: 960px;
-  margin: 30px auto 0;
+  margin: 0 auto;
 }
 .page-header{
-  margin: 0 0 50px;
+  margin: 20px 0 20px;
 }
 .navigation{
   float: right;
@@ -42,11 +44,11 @@ body{
 .active{
 	background: $navColor;
 	color: $bgColor;
- 	@include transform(1.1);
+ 	@include resize(1.1);
 	@include borderRadius(5px);
 }
 .navigation__item-link:hover{
-  @include transform(1.1);
+  @include resize(1.1);
   @include transition(0.2s);
 //  @include textShadow(1px 1px 2px #1996f6);
 }
@@ -79,12 +81,11 @@ body{
   vertical-align: top;
   text-align: center;
   position: relative;
-  @include transition(0.3s);
   &:hover .projects__link-bg,&:hover .projects__link{
-	display: block;
+	opacity: 1;
   }
   &:hover .projects__img{
-	@include transform(1.1);
+	@include resize(1.1);
   }
 }
 .projects__img-wrapper{
@@ -97,9 +98,9 @@ body{
   @include transition(0.3s);
 }
 .projects__link, .projects__link-bg{
-  display: none;
+  opacity: 0;
   position: absolute;
-  @include transition(0.3s);
+  @include transition(opacity 0.3s);
 }
 .projects__link-bg{
   top: 0;
